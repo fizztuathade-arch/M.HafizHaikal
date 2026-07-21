@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #95e5f1;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgb(255, 254, 254);
+            width: 500px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .text {
+            width: 60%;
+            margin-left: 40px;
+        }
+
+        .foto {
+            width: 130px;
+            height: 170px;
+            border: 2px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-right: 40px;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+        .fotoser {
+            display: flex;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .fotoser img {
+            width: 110px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .fotoser img:hover {
+            transform: translateY(-5px);
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #fff;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>BIODATA DIRI</h2>
+
+        <div class="content">
+
+            <div class="text">
+                <p><span class="label">Nama:</span> M. Hafiz Haikal</p>
+                <p><span class="label">Kelas:</span> XII</p>
+                <p><span class="label">Jurusan:</span> PPLG</p>
+                <p><span class="label">Tgl Lahir:</span> 12-05-2008</p>
+                <p><span class="label">Umur:</span> 18 tahun</p>
+                <p><span class="label">Hobi:</span> Gamer</p>
+
+                <p><span class="label">Impian:</span></p>
+                <ul>
+                    <li>Mobil Sport JDM</li>
+                    <li>Web Developer</li>
+                    <li>Terbang Keliling Dunia</li>
+                </ul>
+                <p><span class="label">Pencapaian:</span></p>
+
+                <div class="fotoser">
+                    <a href="#foto1">
+                    <img src="sertifikat1.png" alt="Sertifikat 1">
+                    </a>
+
+                    <a href="#foto2">
+                        <img src="sertifikat2.png" alt="Sertifikat 2">
+                    </a>
+
+                    <a href="#foto3">
+                        <img src="sertifikat3.png" alt="Sertifikat3">
+                    </a>
+                </div>
+
+
+                <div id="foto1" class="lightbox">
+                    <a href="#">
+                    <img src="sertifikat1.png" alt="Sertifikat 1">
+                    </a>
+                </div>
+
+
+                <div id="foto2" class="lightbox">
+                    <a href="#">
+                    <img src="sertifikat2.png" alt="Sertifikat 2">
+                    </a>
+                </div>
+
+                <div id="foto3" class="lightbox">
+                    <a href="#">
+                        <img src="sertifikat3.png" alt="Sertifikat 3">
+                    </a>
+                </div>
+            </div>
+
+            <div class="foto">
+                <img src="hafiz.jpg" alt="Foto">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
