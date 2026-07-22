@@ -18,7 +18,7 @@
 
         .container {
             background: rgb(255, 254, 254);
-            width: 500px;
+            width: 550px;
             padding: 20px;
             border-radius: 20px;
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -33,11 +33,11 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            gap: 15px;
         }
 
         .text {
-            width: 60%;
-            margin-left: 40px;
+            flex: 1;
         }
 
         .foto {
@@ -48,7 +48,7 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            margin-right: 40px;
+            flex-shrink: 0;
         }
 
         .foto img {
@@ -60,6 +60,7 @@
         .label {
             font-weight: bold;
         }
+        
         .fotoser {
             display: flex;
             gap: 12px;
@@ -79,6 +80,7 @@
         .fotoser img:hover {
             transform: translateY(-5px);
         }
+
         .lightbox {
             display: none;
             position: fixed;
@@ -125,33 +127,30 @@
                     <li>Web Developer</li>
                     <li>Terbang Keliling Dunia</li>
                 </ul>
+                
                 <p><span class="label">Pencapaian:</span></p>
-
                 <div class="fotoser">
                     <a href="#foto1">
-                    <img src="sertifikat1.png" alt="Sertifikat 1">
+                        <img src="sertifikat1.png" alt="Sertifikat 1">
                     </a>
-
                     <a href="#foto2">
                         <img src="sertifikat2.png" alt="Sertifikat 2">
                     </a>
-
                     <a href="#foto3">
-                        <img src="sertifikat3.png" alt="Sertifikat3">
+                        <img src="sertifikat3.png" alt="Sertifikat 3">
                     </a>
                 </div>
 
-
+                <!-- Lightbox Elemen -->
                 <div id="foto1" class="lightbox">
                     <a href="#">
-                    <img src="sertifikat1.png" alt="Sertifikat 1">
+                        <img src="sertifikat1.png" alt="Sertifikat 1">
                     </a>
                 </div>
-
 
                 <div id="foto2" class="lightbox">
                     <a href="#">
-                    <img src="sertifikat2.png" alt="Sertifikat 2">
+                        <img src="sertifikat2.png" alt="Sertifikat 2">
                     </a>
                 </div>
 
@@ -162,8 +161,9 @@
                 </div>
             </div>
 
+            <!-- Bagian Foto Profil Utama Menggunakan File Lokal -->
             <div class="foto">
-                <img src="https://cdn.phototourl.com/free/2026-07-22-28a9e3f0-b527-4b60-98f8-ce0ab78de205.jpg" alt="Foto">
+                <img src="hafiz.jpg" alt="Foto">
             </div>
 
         </div>
